@@ -3,63 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-        h2 {
-            color: #333;
-        }
-        .project {
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            padding: 20px;
-            border-radius: 5px;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="css/portcss.css">
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="imagenes/letrah.png" type="image/x-icon">
+    <title>Hector Pedrola | Portfolio </title>
 </head>
 <body>
-    <header>
-        <h1>Mi Portfolio</h1>
-        <p>Bienvenido a mi portfolio. Aquí puedes ver algunos de mis trabajos.</p>
-    </header>
-
-    <section>
-        <h2>Proyectos</h2>
-        <div class="project">
-            <h3>Proyecto 1</h3>
-            <p>Descripción del proyecto 1.</p>
+   <div class="container">
+    <!-- --------------- HEADER --------------- -->
+      <nav id="header">
+        <div class="nav-logo">
+            <p class="nav-name">Hector Pedrola</p>
+            <span>.</span>
         </div>
-        <div class="project">
-            <h3>Proyecto 2</h3>
-            <p>Descripción del proyecto 2.</p>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Inicio</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">Sobre Mi </a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Proyectos</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contacto</a>
+                    <div class="circle"></div>
+                </li>
+            </ul>
         </div>
-        <!-- Puedes añadir más proyectos aquí -->
-    </section>
-
+        <div class="nav-button">
+            <button class="btn abrircurriculum" data-ruta="imagenes/micurriculum.png">Ver CV <i class="uil uil-file-alt"></i></button>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+       <!-- -------------- FEATURED BOX ---------------- -->
+       <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="featured-text-card">
+                <span>Hector Pedrola</span>
+            </div>
+            <div class="featured-name">
+                <p>Soy <span class="typedText"></span></p>
+            </div>
+            <div class="featured-text-info">
+                <p> Desarrollador frontend y en Android Studio, enfocado en crear sitios web y aplicaciones con un diseño atractivo y una experiencia de usuario intuitiva. 
+                </p>
+            </div>
+            <div class="featured-text-btn">
+                <button class="btn blue-btn">Hire Me</button>
+                <button class="btn abrircurriculum" data-ruta="imagenes/micurriculum.png">Ver CV <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+                <div class="icon"><a href="https://www.linkedin.com/in/hector-pedrola-6973a4243/" class="uil uil-linkedin-alt "></a></div>
+                <div class="icon"><a href="https://github.com/hectorinfinite" class="uil uil-github-alt"></a></div>
+            </div>
+          </div>
+          <div class="featured-image">
+            <div class="image">
+                <img src="imagenes/yo.jpg" alt="avatar">
+            </div>
+          </div>
+          <div class="scroll-icon-box">
+            <a href="#about" class="scroll-btn">
+                <i class="uil uil-mouse-alt"></i>
+                <p>Desplazarse hacia abajo</p>
+            </a>
+          </div>
+       </section>
+       <!-- -------------- ABOUT BOX ---------------- -->
+       <section class="section" id="about">
+          <div class="top-header">
+            <h1>Sobre Mi</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+                <div class="about-info">
+                    <h3>Introducción</h3>
+                    <p>Conocimientos en HTML, CSS y JavaScript, así como en otros frameworks y bibliotecas de vanguardia, 
+                       puedo implementar características interactivas en mis proyectos. Además, tengo experiencia en el desarrollo 
+                       de aplicaciones utilizando Android Studio. Estoy comprometido a seguir aprendiendo y mejorando continuamente mis habilidades en el desarrollo frontend 
+                       y en la creación de aplicaciones para Android.
+                    </p>
+                    <div class="about-btn">
+                        <button class="btn abrircurriculum" data-ruta="imagenes/micurriculum.png">Ver CV <i class="uil uil-import"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Frontend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Backend</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>PHP</span>
+                        <span>JAVA</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skills-box">
+                    <div class="skills-header">
+                        <h3>Base de Datos</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span>MySQL</span>
+                        <span>MongoDB</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+       </section>
+       <!-- -------------- PROJECT BOX ---------------- -->
+       <section class="section" id="projects">
+          <div class="top-header">
+              <h1>Proyectos</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+                <i class="uil uil-briefcase-alt"></i>
+                <h3>Completados</h3>
+                <label>3+ Proyectos Finalizados</label>
+            </div>
+          </div>
+       </section>
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Encuentrame</h1>
+            <span>Tienes un proyecto en mente ?, contactame</span>
+          </div>
+          <div class="row">
+             <div class="col">
+                <div class="contact-info">
+                    <h2>Contacta conmigo <i class="uil uil-corner-right-down"></i></h2>
+                    <p><i class="uil uil-envelope"></i> Email: hectorpedrolavicente346@gmail.com</p>
+                    <p><i class="uil uil-phone"></i> Tel: +34 619880314</p>
+                </div>
+             </div>
+             <div class="col">
+                <div class="form-control">
+                    <div class="form-inputs">
+                        <input type="text" class="input-field" placeholder="Name">
+                        <input type="text" class="input-field" placeholder="Email">
+                    </div>
+                    <div class="text-area">
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <div class="form-button">
+                        <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                    </div>
+                </div>
+             </div>
+          </div>
+       </section>
+    </main>
+    <!-- --------------- FOOTER --------------- -->
     <footer>
-        <p>&copy; 2024 Mi Portfolio</p>
+        <div class="top-footer">
+            <p>Hector Pedrola .</p>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Inicio</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">Sobre mi </a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Proyectos</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <div class="icon"><a href="https://www.linkedin.com/in/hector-pedrola-6973a4243/" class="uil uil-linkedin-alt"></a></div>
+            <div class="icon"><a href="https://github.com/hectorinfinite" class="uil uil-github-alt"></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Hector Pedrola</a> - All rights reserved</p>
+        </div>
     </footer>
+    </div>
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+       <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- ----- MAIN JS ----- -->
+    <script src="js/portjs.js"></script>
 </body>
 </html>
